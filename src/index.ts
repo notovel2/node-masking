@@ -27,22 +27,3 @@ const maskObject = <T extends { [key: string]: any }>(object: T, pairs: Pair, { 
 }
 
 export default maskObject;
-
-console.log(maskObject(
-	{
-		phoneNumber: '0991112222',
-		email: 'node_masking@domain.com',
-		password: 'abc123',
-    user: {
-      phoneNumber: '+66991112222'
-    }
-	},
-	{
-		phoneNumber: phoneNumberMasking(),
-		email: emailMasking({ startMaskOffset: 2, endMaskOffset: 4}),
-		password: allMask({ symbol: '#' }),
-	},
-	{
-		deep: true,
-	}
-));
