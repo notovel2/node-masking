@@ -9,7 +9,6 @@ const emailMask = ({ startMaskOffset, endMaskOffset, symbol = '*' }: EmailMaskOp
   const atIndex = email.indexOf('@');
   const domain = email.substr(atIndex);
   const name = email.substring(0, atIndex);
-  console.log(name, domain);
   
   const length = name.length;
   const start = startMaskOffset || 1;
