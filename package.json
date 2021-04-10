@@ -1,6 +1,9 @@
 {
   "name": "node-masking",
   "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/notovel2/node-masking"
+  },
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
