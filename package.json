@@ -1,7 +1,8 @@
 {
   "name": "node-masking",
-  "version": "1.0.3-alpha",
+  "version": "1.0.3-alpha3",
   "repository": {
+    "type": "git",
     "url": "https://github.com/notovel2/node-masking"
   },
   "keywords": [
@@ -14,14 +15,14 @@
   "types": "dist/index.d.ts",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf dist && tsc",
+    "build": "tsc",
     "prepublish": "tsc",
     "start": "npm run build && node dist/index.js"
   },
   "devDependencies": {
     "typescript": "^4.2.4"
   },
-  "dependencies": {
-    "node-masking": "^1.0.2"
-  }
+  "files": [
+    "lib/**/*"
+  ]
 }
